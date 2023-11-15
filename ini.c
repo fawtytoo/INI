@@ -151,7 +151,7 @@ int INI_Open(char *iniFile)
 
         // sections are minimum 3 characters, i.e. [s]
         // key pairs are minimum 3 characters, i.e. n=v
-        if ((length = strlen(lineStart)) < 3)
+        if (strlen(lineStart) < 3)
         {
             continue;
         }
